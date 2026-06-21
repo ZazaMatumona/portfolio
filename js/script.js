@@ -203,6 +203,6 @@ function initContactForm() {
     const subject = encodeURIComponent(`Contacto via portfolio — ${name}`);
     const body = encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${message}`);
 
-    window.location.href = `mailto:zazadacruz@azacruz.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:antoniodacruzzaza@gmail.com?subject=${subject}&body=${body}`;
   });
 }
