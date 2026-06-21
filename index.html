@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaza Da Cruz — Consultor de TI & Desenvolvedor Web</title>
+  <meta name="description" content="Portfolio de Zaza Da Cruz: Consultor de TI, Administrador de Sistemas e fundador de produtos web em Angola." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand">AZ<span class="nav__brand-dot">.</span></a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#competencias" data-i18n="nav.skills">Competências</a>
+        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
+        <a href="#contacto" class="nav__cta" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="lang-toggle mono" id="langToggle" aria-label="Mudar idioma / Switch language">
+          <span data-lang-current>PT</span>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow mono" data-i18n="hero.eyebrow">SISTEMAS · CLOUD · WEB</p>
+          <h1 class="hero__title">
+            Zaza Matumona<br /><span class="accent">Da Cruz</span>
+          </h1>
+          <p class="hero__role" data-i18n="hero.role">
+            Consultor de TI & Administrador de Sistemas a construir produtos SAS, websites e infraestrutura digital em Angola.
+          </p>
+          <div class="hero__cta">
+            <a href="#projetos" class="btn btn--primary" data-i18n="hero.ctaProjects">Ver projetos</a>
+            <a href="#contacto" class="btn btn--ghost" data-i18n="hero.ctaContact">Contactar</a>
+          </div>
+        </div>
+
+        <aside class="status-card" aria-label="Resumo profissional">
+          <div class="status-card__head">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="mono status-card__label" data-i18n="hero.statusLabel">sistema · online</span>
+          </div>
+          <ul class="status-card__list">
+            <li>
+              <span data-i18n="hero.statExpLabel">Experiência</span>
+              <strong><span id="yearsCounter">14</span>+ <span data-i18n="hero.statExpUnit">anos</span></strong>
+            </li>
+            <li>
+              <span data-i18n="hero.statAreasLabel">Áreas</span>
+              <strong>TI · Cloud · ERP · Web</strong>
+            </li>
+            <li>
+              <span data-i18n="hero.statCompaniesLabel">Empresas</span>
+              <strong>Aza Cruz Lda · ASC AxiomTech</strong>
+            </li>
+            <li>
+              <span data-i18n="hero.statAvailLabel">Disponibilidade</span>
+              <strong class="status-card__avail" data-i18n="hero.statAvailValue">Aberto a novos projetos</strong>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="sobre">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="avatar mono">AZ</div>
+          <div class="about__media-caption mono" data-i18n="about.location">Luanda, Angola</div>
+        </div>
+
+        <div class="about__content reveal">
+          <p class="eyebrow mono" data-i18n="about.eyebrow">SOBRE MIM</p>
+          <h2 data-i18n="about.title">Da infraestrutura à construção de produtos digitais</h2>
+
+          <p data-i18n="about.p1">
+            Ao longo de mais de 14 anos construí uma carreira sólida como Técnico Informático, Consultor de TI
+            e Administrador de Sistemas e infraestrutura de T.I, actuei por muito tempo na área de Helpdesk, com foco especial em ERPs como:
+            <p>
+              <ul class="ERPS__bullets">
+                <li ERPS__bullets="projects.nzo.b1">Cegid Primavera</li>
+                <li ERPS__bullets="projects.nzo.b2">XD Sofware</li>
+                <li ERPS__bullets="projects.nzo.b3">Odoo ERP<li>
+                <li ERPS__bullets="projects.nzo.b4">Logic POS</li>
+                <li ERPS__bullets="projects.nzo.b4">AY GEST ERP</li>
+                <li ERPS__bullets="projects.nzo.b4">E outras soluções</li>
+              </ul>
+            </p>
+           
+          </p>
+          <p data-i18n="about.p2">
+            Mais recentemente, aprofunde conhecimentos em computação em nuvem (AWS, Azure, GCP) e
+            virtualização (VMware), e decidi expandir essa base técnica para o desenvolvimento web. Fundei a
+            <strong> Aza Cruz Lda</strong>, onde desenvolvo sites e plataformas web, e sou também Co-fundador da
+            <strong> ASC AxiomTech</strong>, uma startup de tecnologia e desenvolvimento de soluções tecnológicas sob medidas, desde produtos SAS, websites,projectos tecnologia web3/blockchain, onde desenvolvemos soluções robustas como a NzoChain — uma infraestrutura de segurança
+            para o ecossistema Web3.
+          </p>
+
+          <div class="about__facts">
+            <div class="about__fact">
+              <strong>14+</strong>
+              <span data-i18n="about.fact1">anos em TI & Sistemas</span>
+            </div>
+            <div class="about__fact">
+              <strong>5</strong>
+              <span data-i18n="about.fact2">empresas com experiência ERP</span>
+            </div>
+            <div class="about__fact">
+              <strong>2</strong>
+              <span data-i18n="about.fact3">negócios próprios fundados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPETÊNCIAS ===== -->
+    <section class="section section--alt" id="competencias">
+      <div class="container">
+        <p class="eyebrow mono" data-i18n="skills.eyebrow">COMPETÊNCIAS</p>
+        <h2 data-i18n="skills.title">Ferramentas e tecnologias com que trabalho</h2>
+
+        <div class="skills__grid">
+          <div class="skill-card reveal">
+            <h3 data-i18n="skills.cat1.title">Infraestrutura & Cloud</h3>
+            <div class="tag-list">
+              <span class="tag">AWS</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Google Cloud</span>
+              <span class="tag">VMware</span>
+              <span class="tag">Windows Server</span>
+              <span class="tag">GNU/Linux</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 data-i18n="skills.cat2.title">ERP & Sistemas de Gestão</h3>
+            <div class="tag-list">
+              <span class="tag">Cegid Primavera</span>
+              <span class="tag">XD</span>
+              <span class="tag">Logic POS</span>
+              <span class="tag" data-i18n="skills.tagHelpdesk">Suporte & Helpdesk</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 data-i18n="skills.cat3.title">Desenvolvimento Web</h3>
+            <div class="tag-list">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag tag--learning">Next.js <em data-i18n="skills.learning">em aprendizagem</em></span>
+              <span class="tag tag--learning">TypeScript <em data-i18n="skills.learning">em aprendizagem</em></span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3 data-i18n="skills.cat4.title">Outras Competências</h3>
+            <div class="tag-list">
+              <span class="tag" data-i18n="skills.tag1">Atendimento ao Cliente</span>
+              <span class="tag" data-i18n="skills.tag2">Vendas Técnicas</span>
+              <span class="tag" data-i18n="skills.tag3">Webdesign Responsivo</span>
+              <span class="tag" data-i18n="skills.tag4">Montagem & Reparação de Hardware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <p class="eyebrow mono" data-i18n="projects.eyebrow">PROJETOS</p>
+        <h2 data-i18n="projects.title">O que tenho construído</h2>
+
+        <!-- Grupo: Aza Cruz Lda -->
+        <div class="project-group">
+          <div class="project-group__head">
+            <h3>Aza Cruz Lda</h3>
+            <span class="mono project-group__role" data-i18n="projects.azaRole">Fundador & Desenvolvedor</span>
+          </div>
+
+          <div class="project-cards">
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <span class="tag tag--status" data-i18n="projects.mais2.tag">Site Institucional · Estático</span>
+              </div>
+              <h4>Mais2Linhas</h4>
+              <p data-i18n="projects.mais2.desc">
+                Website institucional para uma empresa de segurança eletrónica, com secções de serviços
+                (CCTV, biometria, alarmes e sistemas de incêndio), galeria de projetos e contacto.
+              </p>
+              <div class="tag-list tag-list--tech">
+                <span class="tag tag--tech">HTML</span>
+                <span class="tag tag--tech">CSS</span>
+                <span class="tag tag--tech">JavaScript</span>
+              </div>
+              <a href="https://mais2linhas.com" target="_blank" rel="noopener" class="project-card__link">
+                mais2linhas.com ↗
+              </a>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card__top">
+                <span class="tag tag--status" data-i18n="projects.bmz.tag">Plataforma Dinâmica · Backoffice</span>
+              </div>
+              <h4>BMZ Advogados</h4>
+              <p data-i18n="projects.bmz.desc">
+                Plataforma web para um escritório de advocacia, com backoffice próprio (estilo ERP jurídico)
+                para gestão de processos e informação interna do escritório.
+              </p>
+              <div class="tag-list tag-list--tech">
+                <span class="tag tag--tech" data-i18n="projects.bmz.tech">Aplicação Web Dinâmica</span>
+                <span class="tag tag--tech" data-i18n="projects.bmz.tech2">Backoffice / ERP</span>
+              </div>
+              <a href="https://bmzadvogados.co.ao" target="_blank" rel="noopener" class="project-card__link">
+                bmzadvogados.co.ao ↗
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Grupo: ASC AxiomTech -->
+        <div class="project-group">
+          <div class="project-group__head">
+            <h3>ASC AxiomTech</h3>
+            <span class="mono project-group__role" data-i18n="projects.axiomRole">Co-fundador (sócio minoritário)</span>
+          </div>
+
+          <div class="project-cards">
+            <article class="project-card project-card--feature reveal">
+              <div class="project-card__top">
+                <span class="tag tag--status" data-i18n="projects.nzo.tag">Infraestrutura de Segurança Web3 · Em desenvolvimento</span>
+              </div>
+              <h4>NzoChain</h4>
+              <p data-i18n="projects.nzo.desc">
+                Camada de segurança para o ecossistema Web3 e DeFi: protege carteiras, analisa contratos
+                inteligentes e simula transações antes da assinatura, bloqueando ameaças em tempo real em
+                múltiplas redes EVM.
+              </p>
+              <ul class="project-card__bullets">
+                <li data-i18n="projects.nzo.b1">Proteção de carteiras em tempo real</li>
+                <li data-i18n="projects.nzo.b2">Análise de risco de smart contracts</li>
+                <li data-i18n="projects.nzo.b3">Simulação de transações antes da assinatura</li>
+                <li data-i18n="projects.nzo.b4">Infraestrutura de segurança multi-chain</li>
+              </ul>
+              <div class="tag-list tag-list--tech">
+                <span class="tag tag--tech">Next.js</span>
+                <span class="tag tag--tech">TypeScript</span>
+                <span class="tag tag--tech">Node.js</span>
+                <span class="tag tag--tech">Ethers.js</span>
+              </div>
+              <a href="https://nzochain.com" target="_blank" rel="noopener" class="project-card__link">
+                nzochain.com ↗
+              </a>
+            </article>
+          </div>
+
+          <a href="https://ascaxiomtech.com" target="_blank" rel="noopener" class="project-group__more mono">
+            <span data-i18n="projects.axiomMore">Ver ASC AxiomTech</span> ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIÊNCIA ===== -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <p class="eyebrow mono" data-i18n="exp.eyebrow">EXPERIÊNCIA</p>
+        <h2 data-i18n="exp.title">Percurso profissional</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono" data-i18n="exp.job1.date">Jul 2023 — Presente</span>
+            <h4>Open Safety Lda</h4>
+            <p data-i18n="exp.job1.role">Administrador de Sistema de TI, Consultor e Técnico de Suporte ERP (Cegid Primavera)</p>
+            <span class="timeline__place mono" data-i18n="exp.job1.place">Viana, Luanda, Angola</span>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono" data-i18n="exp.job2.date">Mar 2018 — Presente</span>
+            <h4>azacruz_informatica</h4>
+            <p data-i18n="exp.job2.role">Administrador de Sistemas e Consultor de Tecnologias de Informação (negócio próprio)</p>
+            <span class="timeline__place mono" data-i18n="exp.job2.place">Luanda, Angola</span>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono" data-i18n="exp.job3.date">Fev 2023 — Mar 2023</span>
+            <h4>Petabyte — Tecnologia & Sistemas</h4>
+            <p data-i18n="exp.job3.role">Técnico Primavera & IT Consulting System Administrator</p>
+            <span class="timeline__place mono" data-i18n="exp.job3.place">Luanda, Angola</span>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono" data-i18n="exp.job4.date">Abr 2019 — Nov 2021</span>
+            <h4>CLACS Tecnologia</h4>
+            <p data-i18n="exp.job4.role">Administrador de Sistema, Consultor de TI, Técnico Primavera ERP</p>
+            <span class="timeline__place mono" data-i18n="exp.job4.place">Luanda, Angola</span>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date mono" data-i18n="exp.job5.date">Mai 2017 — Abr 2019</span>
+            <h4>2R-Repalanga</h4>
+            <p data-i18n="exp.job5.role">Gestor de TI, Administrador de Sistemas e Técnico Primavera ERP</p>
+            <span class="timeline__place mono" data-i18n="exp.job5.place">Angola</span>
+          </li>
+        </ol>
+
+        <div class="education reveal">
+          <p class="eyebrow mono" data-i18n="exp.eduEyebrow">FORMAÇÃO</p>
+          <ul class="education__list">
+            <li data-i18n="exp.edu1">1º Ano de Engenharia Informática — Instituto Superior Técnico de Angola (ISTA), 2019</li>
+            <li data-i18n="exp.edu2">Instalação e Administração de Sistemas Microsoft Windows — AulaEAD, Brasil, 2018</li>
+            <li data-i18n="exp.edu3">Servidores GNU/Linux — Primeiros Passos — AulaEAD, Brasil, 2017</li>
+            <li data-i18n="exp.edu4">WebDesigner — Criação de Sites Responsivos — AulaEAD, Brasil, 2018</li>
+            <li data-i18n="exp.edu5">Hardware — Reparação, Manutenção e Montagem de Computadores — AJJA, Angola, 2011</li>
+            <li data-i18n="exp.edu6">Microsoft 365 MS 900 KA Solution, Brasil, 2022</li>
+            <li data-i18n="exp.edu7">Fundamentos SAP, KA Solution, Brasil, 2022</li>
+            <li data-i18n="exp.edu8">Fundamentos SAP S/4HANA, KA Solution, Brasil, 2023</li>
+             <li data-i18n="exp.edu9">Computação em Nuvem | AWS (Amazon web services), KA Solution, Brasil, 2023</li>
+             <li data-i18n="exp.edu9">Computação em Nuvem | Microsoft Azure ()AZ-900), KA Solution, Brasil, 2023</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section" id="contacto">
+      <div class="container contact__grid">
+        <div class="reveal">
+          <p class="eyebrow mono" data-i18n="contact.eyebrow">CONTACTO</p>
+          <h2 data-i18n="contact.title">Vamos conversar sobre o seu projeto</h2>
+          <p data-i18n="contact.subtitle">
+            Disponível para consultoria em TI, sistemas e cloud, e para novos projetos de desenvolvimento web.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="mono contact__label" data-i18n="contact.emailLabel">Email</span>antoniodacruzzaza@gmail.com
+              <button class="contact__value contact__copy" id="copyEmail" data-value="antoniodacruzzaza@gmail.com">
+              <span class="contact__copy-hint mono" data-i18n="contact.copy">copiar</span>
+              </button>
+            </li>
+            <li>
+              <span class="mono contact__label" data-i18n="contact.phoneLabel">Telefone / WhatsApp</span>
+              <a class="contact__value" href="https://wa.me/244927231402" target="_blank" rel="noopener">+244 927 231 402</a>
+            </li>
+            <li>
+              <span class="mono contact__label">LinkedIn</span>
+              <a class="contact__value" href="https://www.linkedin.com/in/zaza-da-cruz-5758b73a6/" target="_blank" rel="noopener">zaza Da Cruz</a>
+            </li>
+            <li>
+              <span class="mono contact__label" data-i18n="contact.locationLabel">Localização</span>
+              <span class="contact__value">Luanda, Angola</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <label for="name" data-i18n="contact.formName">Nome</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email" data-i18n="contact.formEmail">O seu email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message" data-i18n="contact.formMessage">Mensagem</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn--primary" data-i18n="contact.formSubmit">Enviar mensagem</button>
+          <p class="contact-form__hint mono" data-i18n="contact.formHint">Isto abre o seu programa de email com a mensagem pronta a enviar.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="mono">© <span id="year"></span> António Zaza Da Cruz</span>
+      <div class="footer__links">
+        <a href="https://www.linkedin.com/in/zaza-da-cruz-5758b73a6/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ZazaMatumona" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:antoniodacruzzaza@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
